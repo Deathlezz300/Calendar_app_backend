@@ -18,7 +18,9 @@ DBconection();
 
 //CORS
 
-app.use(cors());
+app.use(cors({
+    origin:["https://calendar-app-react30.netlify.app"]
+}));
 
 app.use(express.static('public'))  //midleware funcion que se ejecute cuando se hace una peticion
 
